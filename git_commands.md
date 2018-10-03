@@ -93,11 +93,11 @@ _A list of my commonly used Git commands_
 |`git log -15 --graph`| Show graph history |
 |`git log -15 --pretty`| pretty output|
 |`git log -15 --stat`|	with stat of commit|
-|`git log —oneline —decorate —graph —all`| all commits pretty|
-|`git log —pretty=format:"%h - %an, %ar : %s"`| commit history|
-|`git log —pretty=format:”%h %s” HEAD~3..HEAD`|show log of last 3 commits|
-|`git log —since=2.week`|show log for last two weeks|
-|`git log —grep`|filter by commit subject|
+|`git log —-oneline -—decorate -—graph —-all`| all commits pretty|
+|`git log --pretty=format:"%h - %an, %ar : %s"`| commit history|
+|`git log --pretty=format:"%h %s" HEAD~2..HEAD`|show log of last 3 commits|
+|`git log --since=2.week`|show log for last two weeks|
+|`git log -g --grep="str_to_find"`|filter by commit subject|
 
 #### git log command options
 |Option|Description of Output|
