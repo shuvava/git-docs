@@ -87,6 +87,8 @@ _A list of my commonly used Git commands_
 | ------- | ----------- |
 |`git branch -v`| show last commit|
 |`git branch —merged master`|get all branches already merged into master|
+| `git show commit_hash` | show changes of in specific commit |
+| `git log commit_hash -n 1 -p` | show changes of in specific commit |
 | `git log` | View changes |
 | `git log --summary` | View changes (detailed) |
 | `git diff [source branch] [target branch}` | Preview changes before merging |
