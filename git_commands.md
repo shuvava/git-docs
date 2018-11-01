@@ -1,5 +1,4 @@
-Git Commands
-============
+# Git Commands
 
 _A list of my commonly used Git commands_
 
@@ -41,7 +40,7 @@ _A list of my commonly used Git commands_
 |j| leave this hunk undecided, see next undecided hunk
 |J | leave this hunk undecided, see net hunk
 |k | leave this hunk undecided, see previous undecided hunk
-|K | leave this hunk undecided, see previous hunk 
+|K | leave this hunk undecided, see previous hunk
 |s | split the current hunk into smaller hunks
 |e | manually edit the current hunk
 |? | print help
@@ -94,7 +93,7 @@ _A list of my commonly used Git commands_
 | `git diff [source branch] [target branch}` | Preview changes before merging |
 |`git log -15 --graph`| Show graph history |
 |`git log -15 --pretty`| pretty output|
-|`git log -15 --stat`|	with stat of commit|
+|`git log -15 --stat`| with stat of commit|
 |`git log —-oneline -—decorate -—graph —-all`| all commits pretty|
 |`git log --pretty=format:"%h - %an, %ar : %s"`| commit history|
 |`git log --pretty=format:"%h %s" HEAD~2..HEAD`|show log of last 3 commits|
@@ -102,6 +101,7 @@ _A list of my commonly used Git commands_
 |`git log -g --grep="str_to_find"`|filter by commit subject|
 
 #### git log command options
+
 |Option|Description of Output|
 | ---- | --------------------|
 |%H| Commit hash|
@@ -119,12 +119,21 @@ _A list of my commonly used Git commands_
 |%cd| Committer date|
 |%cr| Committer date, relative|
 |%s| Subject|
-|-p| Show the patch introduced with each commit.   
-|--stat| Show statistics for files modified in each commit 
-|--shortstat| Display only the changed/insertions/deletions line from the |--stat| command. 
-|—name-only| Show the list of files modified a er the commit information 
-|—name-status| Show the list of files a ected with added/modified/deleted information as well. 
-|—abbrev-commit| how only the first few characters of the SHA-1 checksum 
-|—relative-date| Display the date in a relative format (for example, “2 weeks ago”) instead of using the full date format 
-|—graph| Display an ASCII graph of the branch and merge history be- side the log output. 
-|--pretty| Show commits in an alternate format. Options include one- line, short, full, fuller, and format (where you specify your own format). 
+|-p| Show the patch introduced with each commit.|
+|--stat| Show statistics for files modified in each commit|
+|--shortstat| Display only the changed/insertions/deletions line from the |--stat| command.|
+|—name-only| Show the list of files modified a er the commit information|
+|—name-status| Show the list of files a ected with added/modified/deleted information as well.|
+|—abbrev-commit| how only the first few characters of the SHA-1 checksum|
+|—relative-date| Display the date in a relative format (for example, “2 weeks ago”) instead of using the full date format|
+|—graph| Display an ASCII graph of the branch and merge history be- side the log output.|
+|--pretty| Show commits in an alternate format. Options include one- line, short, full, fuller, and format (where you specify|your own format).
+
+### Configuration
+
+| Command | Description |
+| ------- | ----------- |
+|`git config  user.name`| show current user name|
+|`git config  user.email`| show current user email|
+|`git config  user.name someUserName`| set user name|
+|`git config  user.email some@email.com`| set  user email|
