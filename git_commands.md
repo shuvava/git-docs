@@ -61,6 +61,7 @@ _A list of my commonly used Git commands_
 | `git checkout -- [file-name.txt]` | Discard changes to a file |
 | `git merge [branch name]` | Merge a branch into the active branch |
 | `git merge [source branch] [target branch]` | Merge a branch into a target branch |
+| `git cherry-pick -x <sha>` | cherry-pick commit with `<sha>` hash into current branch |
 |`git checkout [r-branch]; git rebase master`|rebase branch|
 |`git rebase -i HEAD~4`|edit last 4 commits|
 |`git remote [show|rm|rename] branchName`|working with remote|
