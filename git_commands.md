@@ -92,6 +92,7 @@ _A list of my commonly used Git commands_
 | `git log` | View changes |
 | `git log --summary` | View changes (detailed) |
 | `git diff [source branch] [target branch}` | Preview changes before merging |
+| `git diff --staged` | show difference between staged changes and HEAD |
 |`git log -15 --graph`| Show graph history |
 |`git log -15 --pretty`| pretty output|
 |`git log -15 --stat`| with stat of commit|
@@ -100,6 +101,7 @@ _A list of my commonly used Git commands_
 |`git log --pretty=format:"%h %s" HEAD~2..HEAD`|show log of last 3 commits|
 |`git log --since=2.week`|show log for last two weeks|
 |`git log -g --grep="str_to_find"`|filter by commit subject|
+|`git log -SsomeStringToSearch`| find in history any change with someStringToSearch|
 
 #### git log command options
 
