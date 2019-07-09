@@ -22,8 +22,8 @@ _A list of my commonly used Git commands_
 | `git commit -m "[commit message]"` | Commit changes |
 | `git rm -r [file-name.txt]` | Remove a file (or folder) |
 | `git reset filename.txt` | remove files staged for a git commit |
-| `git add —patch <filename>`|add interactive part of file|
-| `git commit —amend`| undo|
+| `git add -patch <filename>`|add interactive part of file|
+| `git commit --amend`| undo|
 
 #### Interactive patch
 
