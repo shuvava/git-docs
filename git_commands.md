@@ -104,6 +104,14 @@ _A list of my commonly used Git commands_
 |`git log -g --grep="str_to_find"`|filter by commit subject|
 |`git log -SsomeStringToSearch`| find in history any change with someStringToSearch|
 
+### Search
+
+| Command | Description |
+| ------- | ----------- |
+| `git grep -in someText` | search `someText` ignore case; show line numbers |
+|`git log -SfindMe`|  search for text that was added or removed by a commit using the pickaxe option |
+|`git log --grep=findme`| search the text of commit messages |
+
 #### git log command options
 
 |Option|Description of Output|
