@@ -78,6 +78,7 @@ _A list of my commonly used Git commands_
 | `git push origin --delete [branch name]` | Delete a remote branch |
 | `git pull` | Update local repository to the newest commit |
 | `git pull origin [branch name]` | Pull changes from remote repository |
+| `git submodule update --init --recursive` | Git update submodules recursively |
 | `git remote add origin ssh://git@github.com/[username]/[repository-name].git` | Add a remote repository |
 | `git remote set-url origin ssh://git@github.com/[username]/[repository-name].git` | Set a repository's origin branch to SSH |
 
@@ -102,6 +103,14 @@ _A list of my commonly used Git commands_
 |`git log --since=2.week`|show log for last two weeks|
 |`git log -g --grep="str_to_find"`|filter by commit subject|
 |`git log -SsomeStringToSearch`| find in history any change with someStringToSearch|
+
+### Search
+
+| Command | Description |
+| ------- | ----------- |
+| `git grep -in someText` | search `someText` ignore case; show line numbers |
+|`git log -SfindMe`|  search for text that was added or removed by a commit using the pickaxe option |
+|`git log --grep=findme`| search the text of commit messages |
 
 #### git log command options
 
