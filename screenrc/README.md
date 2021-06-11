@@ -46,14 +46,14 @@ startup_message off
  bind y eval "exec sh -c 'xsel -bo >/tmp/screen-exchange'"
  
  # open several terminals at startup
- chdir ~/git/trust-center
+ chdir ~/git
  screen -t mc 1 mc
  screen -t git[TC] 2
- stuff "cd $GOPATH/src/git.teradici.com/trust-center/tools/deploy; clear^M"
+ stuff "cd $GOPATH/src/git/tools/deploy; clear^M"
  screen -t git[CAM] 3
- stuff "cd $GOPATH/src/teradici/cloud-access-manager-installer; clear^M"
+ stuff "cd $GOPATH/src/installer; clear^M"
  screen -t dev.build 0
- stuff "cd ~/git/trust-center; clear^M"
+ stuff "cd ~/git/app; clear^M"
 ```
 
 ## Hot keys
