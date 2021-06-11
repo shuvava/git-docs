@@ -20,6 +20,12 @@ map <leader>nf :NERDTreeFind<cr>
  map <leader>t<leader> :tabnext
 ```
 
+## Commands
+
+| Command | Description |
+| ------- | ----------- |
+|`:%!jq .`| format json |
+
 
 ## Links
 
