@@ -24,7 +24,20 @@ map <leader>nf :NERDTreeFind<cr>
 
 | Command | Description |
 | ------- | ----------- |
-|`:%!jq .`| format json |
+|`:%!jq .`| format json  |
+|`:ls`    | files in dir |
+
+## windows commands
+
+
+| Command | Description |
+| ------- | ----------- |
+| `:sp`   | split active windows horizontally |
+| `:vsp`  | split active windows vertically |
+| `:10sp ~/.zshrc` | specify the new split height by prefixing with a number|
+| `ctrl + w _` | Max out the height of the current split |
+|`ctrl + w |`|Max out the width of the current split|
+|`ctrl + w =`|Normalize all split sizes, which is very handy when resizing terminal|
 
 
 ## Links
