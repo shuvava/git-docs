@@ -35,4 +35,7 @@
 env $(grep -v ‘^#’ namespace.env | xargs) bash namespace.yaml.sh | kubectl apply -f -
 ```
 
+## Links
 
+* [Bash](https://www.gnu.org/software/bash/)
+* [Bash Reference Manual](https://www.gnu.org/software/bash/manual/bashref.html)
