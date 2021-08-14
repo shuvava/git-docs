@@ -80,4 +80,4 @@ print() {
 }
 
 print "hello world"
-print "good bay world" $Red
+print "good bay world" "$Red"

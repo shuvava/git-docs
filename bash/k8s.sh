@@ -21,7 +21,7 @@ case ${dest} in
     ;;  
 esac
 
-tee  -a "~/${CONFIG}" > /dev/null <<EOT
+tee  -a "$HOME/${CONFIG}" > /dev/null <<EOT
 alias k=kubectl
 # typing the entire dry-run flag can be tiring — especially when you run it multiple times during the day. A simple alias like the one below can make your life so much easier:
 alias kdr='kubectl --dry-run=client -o yaml'

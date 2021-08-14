@@ -9,7 +9,7 @@ do
 done
 echo
 
-arr=(${array[*]})
+arr=("${array[*]}")
 echo "After unquoted expansion: ${#arr[*]}"
 for ix in ${!arr[*]}
 do
