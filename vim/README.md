@@ -25,3 +25,5 @@
 | `:tabn`           | move to next tab                                                      |
 | `:tabp`           | move to previous tab                                                  |
 | `Ngt`             | activate N tab, where N is 0..9                                       |
+| `:set paste`      | insert text without auto intend                                       |
+| `:set nopaste`    | turn off *insert text without auto intend* mode                       |
