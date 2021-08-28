@@ -12,6 +12,8 @@
 | `ctrl d`          | scrolling the screen **DOWN** by half                         |
 | `ctrl f`          | scrolling the screen **Forward** by full                      |
 | `ctrl b`          | scrolling the screen **Back** by full                         |
+| `G`               | move cursor to the end of file                                |
+
 
 ## Tabs
 
