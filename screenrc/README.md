@@ -27,6 +27,7 @@
 | Kill all windows                      | `Ctrl-a \` (not recommended)                                      |
 | Rename current window                 | `Ctrl-a A`                                                        |
 | Reorder current window                | `Ctrl-a :number x`                                                |
+| Window list                           | `ctrl+a :windowlist` then `. (dot)` - down and `, (comma)` - up|
 
 ## Split screen
 
