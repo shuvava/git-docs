@@ -29,3 +29,11 @@
 | `Ngt`             | activate N tab, where N is 0..9                                       |
 | `:set paste`      | insert text without auto intend                                       |
 | `:set nopaste`    | turn off *insert text without auto intend* mode                       |
+
+## Hex mode
+
+| Command           | Description  |
+| ----------------- | ---- |
+| :%!xxd            | : enters command-line mode, % matches whole file as a range, ! filters that range through an external command, xxd is to hex representation|
+| :%!xxd -c N       | : enters command-line mode, % matches whole file as a range, ! filters that range through an external command, xxd is to hex representation, -c is to count bytes|
+| :%!xxd -r        | : enters command-line mode, % matches whole file as a range, ! filters that range through an external command, xxd is to hex representation, -r is to reverse the output|

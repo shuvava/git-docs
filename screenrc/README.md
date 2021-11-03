@@ -74,8 +74,8 @@ For the reverse, copy something in your browser with Ctrl-C, then go to screen a
 
 | Command       | Description |
 | ------------- | ----------- |
-| <lead>+[      | switch to copy/paste mode; space start/stop selecting; |
-| <lead>+]      | switch out of copy/paste mode; |
-| <lead>+ESC    | switch to scroll mode |
-| ctrl+b        | scroll page back |
-| ctrl+f        | scroll page forward |
+| `<lead>+[`    | switch to copy/paste mode; **space start/stop selecting;** |
+| `<lead>+]`    | switch out of copy/paste mode; |
+| `<lead>+ESC`  | switch to scroll mode |
+| `ctrl+b`      | scroll page back |
+| `ctrl+f`      | scroll page forward |

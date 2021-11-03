@@ -79,5 +79,17 @@ print() {
   echo -e "${color}$1${Color_Off}"
 }
 
+# Function for output messages
+function message() {
+	if ! [[ $2 ]]; then
+		# Green bold text
+		echo -e "${BGreen}$1${Color_Off}"
+	else
+		# Green, red and blue text
+		echo -e "${BGreen}$1${BRed} >> ${BBlue}$2${Color_Off}"
+	fi
+}
+
 print "hello world"
 print "good bay world" "$Red"
+message "category" "some message"
