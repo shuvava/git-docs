@@ -31,3 +31,12 @@ for ix in ${!arr[*]}
 do
     printf "   %s\n" "${arr[$ix]}"
 done
+
+echo "item is in array: ${array[*]/item/}"
+
+item="item"
+if [[ " ${array[*]} " =~ ${item} ]]; then
+    echo "item is in array"
+else
+    echo "item is not in array"
+fi
