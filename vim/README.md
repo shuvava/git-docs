@@ -14,7 +14,6 @@
 | `ctrl b`          | scrolling the screen **Back** by full                         |
 | `G`               | move cursor to the end of file                                |
 
-
 ## Tabs
 
 | Command           | Description                                                           |
@@ -37,3 +36,19 @@
 | :%!xxd            | : enters command-line mode, % matches whole file as a range, ! filters that range through an external command, xxd is to hex representation|
 | :%!xxd -c N       | : enters command-line mode, % matches whole file as a range, ! filters that range through an external command, xxd is to hex representation, -c is to count bytes|
 | :%!xxd -r        | : enters command-line mode, % matches whole file as a range, ! filters that range through an external command, xxd is to hex representation, -r is to reverse the output|
+
+## Find
+
+The general form of the substitute command is as follows:
+`:[range]s/{pattern}/{string}/[flags] [count]`
+The command searches each line in `[range]` for a `{pattern}`, and replaces it with a `{string}`. `[count]` is a positive integer that multiplies the command.
+If no `[range]` and `[count]` are given, only the pattern found in the current line is replaced. The current line is the line where the cursor is placed.
+For example, to search for the first occurrence of the string ‘foo’ in the current line and replace it with ‘bar’, you would use: `:s/foo/bar/`
+To replace all occurrences of the search pattern in the current line, add the g flag: `:s/foo/bar/g`
+If you want to search and replace the pattern in the entire file, use the percentage character % as a range. This character indicates a range from the first to the last line of the file: `:%s/foo/bar/g`
+To confirm each substitution, use the c flag: `:s/foo/bar/gc`
+
+### Case Sensitivity
+
+By default, the search operation is case sensitive; searching for “FOO” will not match “Foo”.
+To ignore case for the search pattern, use the i flag: `:s/Foo/bar/gi`
