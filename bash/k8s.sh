@@ -38,6 +38,11 @@ alias ke='kubectl exec -it'
 # k explain pod.spec.containers.resources - shows online docs
 # Use Bash Autocomplete for kubectl 
 source <(kubectl completion ${dest})
+
+# Use jq with both JSON and non-JSON lines.
+function jjq {
+    jq -R -r "${1:-.} as \$line | try fromjson catch \$line"
+}
 EOT
 
 echo "..done"

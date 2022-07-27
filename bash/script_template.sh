@@ -7,7 +7,7 @@ trap cleanup SIGINT SIGTERM ERR EXIT
 SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd -P)
 
 usage() {
-  cat << EOF # remove the space between << and EOF, this is due to web plugin issue
+  cat <<EOF
 Usage: $(basename "${BASH_SOURCE[0]}") [-h] [-v] [-f] -p param_value arg1 [arg2...]
 
 Script description here.
