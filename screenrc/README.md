@@ -38,6 +38,8 @@
 | Jump to next display region           | `Ctrl-a tab`                                                      |
 | Remove current region                 | `Ctrl-a X`                                                        |
 | Remove all regions but the current one| `Ctrl-a Q`                                                        |
+| resize region horizontal              |  `Ctrl-a :resize -h [+/-]n[%]`   |
+| resize region vertical              |  `Ctrl-a :resize -v [+/-]n[%]`   |
 
 ## Misc
 
@@ -79,3 +81,4 @@ For the reverse, copy something in your browser with Ctrl-C, then go to screen a
 | `<lead>+ESC`  | switch to scroll mode |
 | `ctrl+b`      | scroll page back |
 | `ctrl+f`      | scroll page forward |
+| `<lead>+ESC ?string and press Enter` | It will take you backwards through the buffer to the word string. Pressing N will go to the next match (backwards) in the buffer. To search forwards, the cursor should be anywhere but the end of the buffer, then use `/string` to search down. |
