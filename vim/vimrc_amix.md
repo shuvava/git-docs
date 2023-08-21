@@ -2,6 +2,8 @@
 
 ## NERDTree
 
+the leader key by default is `,`
+
 ### Hot keys
 
 ```conf
