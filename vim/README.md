@@ -48,6 +48,8 @@ To replace all occurrences of the search pattern in the current line, add the g 
 If you want to search and replace the pattern in the entire file, use the percentage character % as a range. This character indicates a range from the first to the last line of the file: `:%s/foo/bar/g`
 To confirm each substitution, use the c flag: `:s/foo/bar/gc`
 
+Press n to find the next occurrence or N to find the previous occurrence.
+
 ### Case Sensitivity
 
 By default, the search operation is case sensitive; searching for “FOO” will not match “Foo”.
